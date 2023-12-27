@@ -1,0 +1,125 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    height: 10dvh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main section {
+    border-top: 2px solid var(--text);
+}
+
+.cv-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.cv-infos {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5rem;
+}
+
+.dev-name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.dev-type {
+    font-size: 1rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.info-text {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 0.9rem;
+}
+
+.double-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.section-title {
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: var(--white);
+    position: relative;
+    top: -0.84rem;
+    padding-right: 1.5rem;
+    width: fit-content;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+}
+
+section > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+}
+
+section > ul > li {
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    gap: 1rem;
+}
+
+article > div > ul {
+    list-style-type: disc;
+}
+
+.project-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ul-skills {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    font-style: italic;
+}
+
+.ul-skills li {
+    border-right: 1px solid var(--text);
+    padding-right: 0.5rem;
+}
+
+.ul-skills li:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+small a {
+    text-decoration: none;
+    color: var(--text);
+}

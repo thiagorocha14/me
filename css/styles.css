@@ -1,0 +1,39 @@
+/* root */
+:root {
+    --accent: linear-gradient(90deg, rgb(37, 69, 117), rgb(37, 44, 117), rgb(52, 37, 117), rgb(57, 11, 123));
+    --text: #000;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", "Roboto", sans-serif;
+    color: var(--text);
+    /* background-color: #fff; */
+}
+
+h1:hover, a:hover {
+    background-clip: text;
+    background-image: var(--accent);
+    background-size: 100%;
+    color: transparent;
+    cursor: pointer;
+}
+
+body {
+    margin: 3rem 4rem;
+}
+
+@media print {
+    * {
+        font-size: 12px;
+    }
+    small {
+        font-size: 10px;
+    }
+    body {
+        margin: 0;
+    }
+}
