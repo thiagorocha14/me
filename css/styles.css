@@ -26,13 +26,31 @@ body {
     margin: 3rem 4rem;
 }
 
+.only-print {
+    display: none;
+}
+
 @media print {
     * {
         font-size: 12px;
     }
+
+    .only-print {
+        display: block;
+    }
+
+    .no-print {
+        display: none;
+    }
+
+    h1 > * {
+        font-size: 24px;
+    }
+
     small {
         font-size: 10px;
     }
+
     body {
         margin: 0;
     }
