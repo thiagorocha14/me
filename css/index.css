@@ -1,0 +1,12 @@
+main h1 {
+    font-size: 3em;
+    font-weight: 800;
+}
+
+main h1 > b {
+    font-weight: 800;
+    background-clip: text;
+    background-image: var(--accent);
+    background-size: 100%;
+    color: transparent;
+}

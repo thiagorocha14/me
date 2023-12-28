@@ -35,6 +35,10 @@ main section {
     text-transform: uppercase;
 }
 
+.dev-name > a {
+    text-decoration: none;
+}
+
 .dev-type {
     font-size: 1rem;
 }
