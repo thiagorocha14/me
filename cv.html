@@ -1,495 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Thiago Rocha</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="css/styles.css" />
-        <link rel="stylesheet" href="css/cv.css" />
-    </head>
-    <body>
-        <header>
-            <section class="cv-title">
-                <h1 class="dev-name">
-                    <a href="index.html" class="no-print">Thiago Rocha</a>
-                    <span class="only-print">Thiago Rocha</span>
-                </h1>
-                <span class="dev-type">Fullstack Web Developer</span>
-            </section>
-            <aside class="cv-infos">
-                <span class="info">
-                    <svg height="16px" width="16px" viewBox="0 0 24 24">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thiago Rocha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/cv.css" />
+</head>
+
+<body>
+    <label class="switch no-print">
+        <input class="switch__input" type="checkbox" role="switch">
+        <svg class="switch__icon switch__icon--light" viewBox="0 0 12 12" width="12px" height="12px" aria-hidden="true">
+            <g fill="#000" stroke="#000" stroke-width="1" stroke-linecap="round">
+                <circle cx="6" cy="6" r="2" />
+                <g stroke-dasharray="1.5 1.5">
+                    <polyline points="6 10,6 11.5" transform="rotate(0,6,6)" />
+                    <polyline points="6 10,6 11.5" transform="rotate(45,6,6)" />
+                    <polyline points="6 10,6 11.5" transform="rotate(90,6,6)" />
+                    <polyline points="6 10,6 11.5" transform="rotate(135,6,6)" />
+                    <polyline points="6 10,6 11.5" transform="rotate(180,6,6)" />
+                    <polyline points="6 10,6 11.5" transform="rotate(225,6,6)" />
+                    <polyline points="6 10,6 11.5" transform="rotate(270,6,6)" />
+                    <polyline points="6 10,6 11.5" transform="rotate(315,6,6)" />
+                </g>
+            </g>
+        </svg>
+        <svg class="switch__icon switch__icon--dark" viewBox="0 0 12 12" width="12px" height="12px" aria-hidden="true">
+            <g fill="#fff" stroke="#fff" stroke-width="1" stroke-linejoin="round" transform="rotate(-45,6,6)">
+                <path
+                    d="m9,10c-2.209,0-4-1.791-4-4s1.791-4,4-4c.304,0,.598.041.883.105-.995-.992-2.367-1.605-3.883-1.605C2.962.5.5,2.962.5,6s2.462,5.5,5.5,5.5c1.516,0,2.888-.613,3.883-1.605-.285.064-.578.105-.883.105Z" />
+            </g>
+        </svg>
+        <span class="switch__sr">Dark Mode</span>
+    </label>
+    <header>
+        <section class="cv-title">
+            <h1 class="dev-name">
+                <a href="index.html" class="no-print">Thiago Rocha</a>
+                <span class="only-print">Thiago Rocha</span>
+            </h1>
+            <span class="dev-type">Fullstack Web Developer</span>
+        </section>
+        <aside class="cv-infos">
+            <span class="info">
+                <svg height="16px" width="16px" viewBox="0 0 24 24">
+                    <path
+                        d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z" />
+                </svg>
+                <a href="tel:+5522988318609" class="info-text">+55 22 988318609</a>
+            </span>
+            <span class="info">
+                <svg height="16px" width="16px" viewBox="0 0 64 64">
+                    <path
+                        d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z">
+                    </path>
+                </svg>
+                <a href="github.com/thiagorocha14" target="_blank" class="info-text">github.com/thiagorocha14</a>
+            </span>
+            <span class="info">
+                <svg version="1.1" width="16px" height="16px" viewBox="0 0 96 96" xml:space="preserve">
                         <path
-                            d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z"
-                        />
-                    </svg>
-                    <a href="tel:+5522988318609" class="info-text"
-                        >+55 22 988318609</a
-                    >
-                </span>
-                <span class="info">
-                    <svg height="16px" width="16px" viewBox="0 0 64 64">
-                        <path
-                            d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z"
-                        ></path>
-                    </svg>
-                    <a
-                        href="github.com/thiagorocha14"
-                        target="_blank"
-                        class="info-text"
-                        >github.com/thiagorocha14</a
-                    >
-                </span>
-                <span class="info">
-                    <svg
-                        version="1.1"
-                        width="16px"
-                        height="16px"
-                        viewBox="0 0 256 256"
-                        xml:space="preserve"
-                    >
-                        <g
-                            style="
-                                stroke: none;
-                                stroke-width: 0;
-                                stroke-dasharray: none;
-                                stroke-linecap: butt;
-                                stroke-linejoin: miter;
-                                stroke-miterlimit: 10;
-                                fill: none;
-                                fill-rule: nonzero;
-                                opacity: 1;
-                            "
-                            transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
-                        >
-                            <path
-                                d="M 45 0 C 25.463 0 9.625 15.838 9.625 35.375 c 0 8.722 3.171 16.693 8.404 22.861 L 45 90 l 26.97 -31.765 c 5.233 -6.167 8.404 -14.139 8.404 -22.861 C 80.375 15.838 64.537 0 45 0 z M 45 48.705 c -8.035 0 -14.548 -6.513 -14.548 -14.548 c 0 -8.035 6.513 -14.548 14.548 -14.548 s 14.548 6.513 14.548 14.548 C 59.548 42.192 53.035 48.705 45 48.705 z"
-                                style="
-                                    stroke: none;
-                                    stroke-width: 1;
-                                    stroke-dasharray: none;
-                                    stroke-linecap: butt;
-                                    stroke-linejoin: miter;
-                                    stroke-miterlimit: 10;
-                                    fill: rgb(0, 0, 0);
-                                    fill-rule: nonzero;
-                                    opacity: 1;
-                                "
-                                transform=" matrix(1 0 0 1 0 0) "
-                                stroke-linecap="round"
-                            />
-                        </g>
-                    </svg>
-                    <span class="info-text">Itaperuna-RJ, Brasil</span>
-                </span>
-                <span class="info">
-                    <svg height="16px" width="16px" viewBox="0 0 50 50">
-                        <path
-                            d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
-                        ></path>
-                    </svg>
-                    <a
-                        href="linkedin.com/in/thiagorochak/"
-                        target="_blank"
-                        class="info-text"
-                        >/in/thiagorochak/</a
-                    >
-                </span>
-                <span class="info">
-                    <svg height="16px" width="16px" viewBox="0 0 24 24">
-                        <path
-                            d="M22 5v4l-10 4L2 9V5a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1zM2 11.154V19a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-7.846l-10 4z"
-                        />
-                    </svg>
-                    <a href="mailto:thiagormnb@gmail.com" class="info-text"
-                        >thiagormnb@gmail.com</a
-                    >
-                </span>
-            </aside>
-        </header>
-        <main>
-            <!-- SUMMARY AND SKILLS -->
-            <div class="double-section">
-                <section>
-                    <h3 class="section-title">Summary</h3>
-                    <p class="section-text">
-                        I started coding in high school in 2017, combining IT
-                        with my studies. Graduated in Information Systems in
-                        2020. Started web development in mid-2021, working with
-                        PHP, JavaScript, and frameworks. Experienced in various
-                        web technologies, currently leading an Angular+Laravel
-                        project and involved in other projects too.
-                    </p>
-                </section>
-                <section>
-                    <h3 class="section-title">Skills</h3>
-                    <p class="skills">
-                        <b>Languages:</b
-                        ><span
-                            >PHP, JavaScript, SQL, HTML, CSS, Python, Java,
-                            Delphi.</span
-                        >
-                        <b>Technologies:</b
-                        ><span
-                            >Docker, Git, Laravel, Angular, Vue, Linux,MySQL,
-                            Firebird, Bootstrap, jQuery, Tailwind, Blade.</span
-                        >
-                    </p>
-                </section>
-            </div>
-            <!-- PROJECTS -->
+                            d="M 45 0 C 25.463 0 9.625 15.838 9.625 35.375 c 0 8.722 3.171 16.693 8.404 22.861 L 45 90 l 26.97 -31.765 c 5.233 -6.167 8.404 -14.139 8.404 -22.861 C 80.375 15.838 64.537 0 45 0 z M 45 48.705 c -8.035 0 -14.548 -6.513 -14.548 -14.548 c 0 -8.035 6.513 -14.548 14.548 -14.548 s 14.548 6.513 14.548 14.548 C 59.548 42.192 53.035 48.705 45 48.705 z"
+                             />
+                </svg>
+                <span class="info-text">Itaperuna-RJ, Brasil</span>
+            </span>
+            <span class="info">
+                <svg height="16px" width="16px" viewBox="0 0 50 50">
+                    <path
+                        d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z">
+                    </path>
+                </svg>
+                <a href="linkedin.com/in/thiagorochak/" target="_blank" class="info-text">/in/thiagorochak/</a>
+            </span>
+            <span class="info">
+                <svg height="16px" width="16px" viewBox="0 0 24 24">
+                    <path
+                        d="M22 5v4l-10 4L2 9V5a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1zM2 11.154V19a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-7.846l-10 4z" />
+                </svg>
+                <a href="mailto:thiagormnb@gmail.com" class="info-text">thiagormnb@gmail.com</a>
+            </span>
+        </aside>
+    </header>
+    <main>
+        <!-- SUMMARY AND SKILLS -->
+        <div class="double-section">
             <section>
-                <h3 class="section-title">Projects</h3>
-                <ul>
-                    <li>
-                        <aside>Web ERP Application</aside>
-                        <article>
-                            <b class="project-title">
-                                <span> Izzi </span>
-                                <small> Confidential Project </small>
-                            </b>
-                            <p>
-                                This is an ERP system with sales, stock, and
-                                financial tools. It has Angular 8 frontend,
-                                Laravel 5.7 backend using MySQL and Redis, a
-                                payment microservice, and a standalone receipt
-                                generator, all connected through REST web
-                                services.
-                            </p>
-                        </article>
-                    </li>
-                    <li>
-                        <aside>Web ORM Application</aside>
-                        <article>
-                            <b class="project-title">
-                                <span> Assina Fácil </span>
-                                <small> Confidential Project </small>
-                            </b>
-                            <p>
-                                This project is a Business Process Management
-                                System facilitating workflow creation, document
-                                and task flow control, form generation, response
-                                organization, and contract management. It's
-                                constructed with Laravel and VueJS frameworks,
-                                alongside Bootstrap, JQuery, and Blade
-                                libraries.
-                            </p>
-                        </article>
-                    </li>
-                    <li>
-                        <aside>Web ERP Application</aside>
-                        <article>
-                            <b class="project-title">
-                                <span> FDCMarket Web </span>
-                                <small> Confidential Project </small>
-                            </b>
-                            <p>
-                                This major project is the web adaptation of the
-                                company's primary ERP Desktop application. It's
-                                a monolithic app developed with Vanilla PHP 5.6,
-                                employing jQuery, Bootstrap, VueJS, and similar
-                                frontend tools. It utilizes the same database
-                                connection as the ERP Desktop application.
-                            </p>
-                        </article>
-                    </li>
-                    <li>
-                        <aside>Internal Administrative Application</aside>
-                        <article>
-                            <b class="project-title">
-                                <span> FDCSuporte </span>
-                                <small> Confidential Project </small>
-                            </b>
-                            <p>
-                                This internal administrative system exclusively
-                                serves company employees, allowing customer
-                                management, issue tracking via a kanban board,
-                                time tracking, and more. Developed with Vanilla
-                                PHP, JQuery, and MySQL for the database.
-                            </p>
-                        </article>
-                    </li>
-                    <li>
-                        <aside>Web Collaboration Tool</aside>
-                        <article>
-                            <b class="project-title">
-                                <span> Trellif </span>
-                                <small>
-                                    <a
-                                        href="https://github.com/thiagorocha14/Trellif"
-                                        target="_blank"
-                                    >
-                                        github.com/thiagorocha14/Trellif
-                                    </a>
-                                </small>
-                            </b>
-                            <p>
-                                A college project, simplifying activity and
-                                project management, inspired by Trello. Enabling
-                                collaborative task and project organization, it
-                                facilitates efficient workflows. With Laravel 9,
-                                Vue 3, Scss, MySQL, it supports project
-                                creation, task assignments, and status updates.
-                                Valuable for teams and individuals, it optimizes
-                                daily tasks through organized workflows.
-                            </p>
-                        </article>
-                    </li>
-                    <li>
-                        <aside>Web Reservation Application</aside>
-                        <article>
-                            <b class="project-title">
-                                <span> Cineiff </span>
-                                <small>
-                                    <a
-                                        href="https://github.com/thiagorocha14/cineiff"
-                                        target="_blank"
-                                    >
-                                        github.com/thiagorocha14/cineiff
-                                    </a>
-                                </small>
-                            </b>
-                            <p>
-                                Is a college project, a web application to
-                                manage one of the college's spaces, the
-                                <i>Cineteatro</i>. It allows users to solicit
-                                reservations for the space, and the admin can
-                                approve or deny the request. Also, it has a
-                                dashboard to show the next events, and the admin
-                                can manage the events, add new movies, create
-                                users and see reports. The system was developed
-                                separately, the backend with Laravel 10 and
-                                MySQL, and the frontend with Angular 16. Both
-                                applications are connected through RESTful
-                                services and deployed in a Docker container.
-                            </p>
-                        </article>
-                    </li>
-                    <li>
-                        <aside>DBA</aside>
-                        <article>
-                            <b class="project-title">
-                                <span> Database Migration </span>
-                            </b>
-                            <p>
-                                At the start of my role, I focused on migrating
-                                customers to our system using Delphi. My main
-                                task was writing SQL Statements to transfer data
-                                across databases like MySQL, Postgres, SQL
-                                Server, Firebird, etc.
-                            </p>
-                        </article>
-                    </li>
-                </ul>
+                <h3 class="section-title">Summary</h3>
+                <p class="section-text">
+                    I started coding in high school in 2017, combining IT
+                    with my studies. Graduated in Information Systems in
+                    2020. Started web development in mid-2021, working with
+                    PHP, JavaScript, and frameworks. Experienced in various
+                    web technologies, currently leading an Angular+Laravel
+                    project and involved in other projects too.
+                </p>
             </section>
-            <!-- EDUCATION -->
             <section>
-                <h3 class="section-title">Education</h3>
-                <ul>
-                    <li>
-                        <aside>2020 - 2024</aside>
-                        <article>
-                            <b class="project-title">
-                                <span>
-                                    Information Systems (Bachelor's Degree)
-                                </span>
-                                <small>
-                                    <a
-                                        href="https://portal1.iff.edu.br/"
-                                        target="_blank"
-                                        >IFF (Instituto Federal Fluminense)</a
-                                    >
-                                </small>
-                            </b>
-                            <p>
-                                Graduated in Information Systems at IFF, where I
-                                learned software development and architecture,
-                                databases managment, the basics of artificial
-                                intelligence and machine learning, business
-                                management, parallel programming, and more.
-                            </p>
-                        </article>
-                    </li>
-                    <li>
-                        <aside>2021</aside>
-                        <article>
-                            <b class="project-title">
-                                <span> PHP Course </span>
-                            </b>
-                            <p>
-                                I took a PHP course to learn more about the
-                                language, how to use it in web development and
-                                how to language works.
-                            </p>
-                        </article>
-                    </li>
-                    <li>
-                        <aside>2021</aside>
-                        <article>
-                            <b class="project-title">
-                                <span> Laravel Course </span>
-                            </b>
-                            <p>
-                                I took a Laravel course to learn all about the
-                                framework and how to use composer, artisan, and
-                                other.
-                            </p>
-                        </article>
-                    </li>
-                    <li>
-                        <aside>2017 - 2019</aside>
-                        <article>
-                            <b class="project-title">
-                                <span> High School + Computer Technician </span>
-                                <small>
-                                    <a
-                                        href="https://portal1.iff.edu.br/"
-                                        target="_blank"
-                                        >IFF (Instituto Federal Fluminense)</a
-                                    >
-                                </small>
-                            </b>
-                            <p>
-                                High School was combined with a computer
-                                technician course, where I learned the basics of
-                                programming, networking, hardware, devops and
-                                OS.
-                            </p>
-                        </article>
-                    </li>
-                </ul>
+                <h3 class="section-title">Skills</h3>
+                <p class="skills">
+                    <b>Languages:</b><span>PHP, JavaScript, SQL, HTML, CSS, Python, Java,
+                        Delphi.</span>
+                    <b>Technologies:</b><span>Docker, Git, Laravel, Angular, Vue, Linux,MySQL,
+                        Firebird, Bootstrap, jQuery, Tailwind, Blade.</span>
+                </p>
             </section>
-            <!-- EXPERIENCE -->
-            <section>
-                <h3 class="section-title">Experience</h3>
-                <ul>
-                    <li>
-                        <aside>2021 - Present</aside>
-                        <article>
-                            <b class="project-title">
-                                <span> Fullstack Web Developer </span>
-                                <small> FDC Sistemas </small>
-                            </b>
-                            <div>
-                                <ul>
-                                    <li>
-                                        Developed and Fixed web applications
-                                        using PHP, Vanilla JavaScript, and
-                                        frameworks like jQuery and Bootstrap,
-                                        along with Laravel, Vue.js, Tailwind
-                                        CSS, and Angular 8. Employed Firebird,
-                                        MySQL, and Redis as databases in various
-                                        backend configurations. Integrated
-                                        through RESTful services for seamless
-                                        application functionality.
-                                    </li>
-                                    <li>
-                                        Developed microservices using Laravel
-                                        API, one to handle payments, and the
-                                        other to generate receipts, using MySQL
-                                        and others libraries, integrating with
-                                        3rd party APIs to generate real
-                                        payments.
-                                    </li>
-                                    <li>
-                                        Worked with Docker, creating containers
-                                        for each application, and using docker
-                                        compose to run all applications
-                                        together. Also, used Git to version the
-                                        code and deploy it to the server.
-                                    </li>
-                                    <li>
-                                        Migrated databases from other systems to
-                                        our system, using SQL statements to
-                                        transfer data across databases like
-                                        MySQL, Postgres, SQL Server, Firebird,
-                                        etc.
-                                    </li>
-                                </ul>
-                                <ul class="ul-skills">
-                                    <li>PHP</li>
-                                    <li>JavaScript</li>
-                                    <li>SQL</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Docker</li>
-                                    <li>Git</li>
-                                    <li>Laravel</li>
-                                    <li>Angular</li>
-                                    <li>Vue</li>
-                                    <li>MySQL</li>
-                                    <li>Firebird</li>
-                                    <li>Linux</li>
-                                    <li>Bootstrap</li>
-                                    <li>jQuery</li>
-                                    <li>Tailwind</li>
-                                    <li>Blade</li>
-                                    <li>Delphi</li>
-                                </ul>
-                            </div>
-                        </article>
-                    </li>
-                    <li>
-                        <aside>2020 - 2021</aside>
-                        <article>
-                            <b class="project-title">
-                                <span> Head of inputs sector </span>
-                                <small> Concrelagos </small>
-                            </b>
-                            <div>
-                                <ul>
-                                    <li>
-                                        Implemented strategies, enhancing
-                                        efficiency, cutting material acquisition
-                                        time, and minimizing resource waste,
-                                        demonstrating expertise in logistics
-                                        optimization.
-                                    </li>
-                                    <li>
-                                        Automated team communication by
-                                        implementing an email system, improving
-                                        efficiency and ensuring timely
-                                        correspondence with stakeholders.
-                                    </li>
-                                </ul>
-                                <ul class="ul-skills">
-                                    <li>Excel</li>
-                                    <li>Communication</li>
-                                    <li>Leadership</li>
-                                </ul>
-                            </div>
-                        </article>
-                    </li>
-                </ul>
-            </section>
-            <!-- LANGUAGES -->
-            <section>
-                <h3 class="section-title">Languages</h3>
-                <ul>
-                    <li>
-                        <aside>Portuguese</aside>
-                        <article>
-                            <b class="project-title">
-                                <span> Native </span>
-                            </b>
-                        </article>
-                    </li>
-                    <li>
-                        <aside>English</aside>
-                        <article>
-                            <b class="project-title">
-                                <span> B2 </span>
-                            </b>
-                        </article>
-                    </li>
-                </ul>
-            </section>
-        </main>
-    </body>
+        </div>
+        <!-- PROJECTS -->
+        <section>
+            <h3 class="section-title">Projects</h3>
+            <ul>
+                <li>
+                    <aside>Web ERP Application</aside>
+                    <article>
+                        <b class="project-title">
+                            <span> Izzi </span>
+                            <small> Confidential Project </small>
+                        </b>
+                        <p>
+                            This is an ERP system with sales, stock, and
+                            financial tools. It has Angular 8 frontend,
+                            Laravel 5.7 backend using MySQL and Redis, a
+                            payment microservice, and a standalone receipt
+                            generator, all connected through REST web
+                            services.
+                        </p>
+                    </article>
+                </li>
+                <li>
+                    <aside>Web ORM Application</aside>
+                    <article>
+                        <b class="project-title">
+                            <span> Assina Fácil </span>
+                            <small> Confidential Project </small>
+                        </b>
+                        <p>
+                            This project is a Business Process Management
+                            System facilitating workflow creation, document
+                            and task flow control, form generation, response
+                            organization, and contract management. It's
+                            constructed with Laravel and VueJS frameworks,
+                            alongside Bootstrap, JQuery, and Blade
+                            libraries.
+                        </p>
+                    </article>
+                </li>
+                <li>
+                    <aside>Web ERP Application</aside>
+                    <article>
+                        <b class="project-title">
+                            <span> FDCMarket Web </span>
+                            <small> Confidential Project </small>
+                        </b>
+                        <p>
+                            This major project is the web adaptation of the
+                            company's primary ERP Desktop application. It's
+                            a monolithic app developed with Vanilla PHP 5.6,
+                            employing jQuery, Bootstrap, VueJS, and similar
+                            frontend tools. It utilizes the same database
+                            connection as the ERP Desktop application.
+                        </p>
+                    </article>
+                </li>
+                <li>
+                    <aside>Internal Administrative Application</aside>
+                    <article>
+                        <b class="project-title">
+                            <span> FDCSuporte </span>
+                            <small> Confidential Project </small>
+                        </b>
+                        <p>
+                            This internal administrative system exclusively
+                            serves company employees, allowing customer
+                            management, issue tracking via a kanban board,
+                            time tracking, and more. Developed with Vanilla
+                            PHP, JQuery, and MySQL for the database.
+                        </p>
+                    </article>
+                </li>
+                <li>
+                    <aside>Web Collaboration Tool</aside>
+                    <article>
+                        <b class="project-title">
+                            <span> Trellif </span>
+                            <small>
+                                <a href="https://github.com/thiagorocha14/Trellif" target="_blank">
+                                    github.com/thiagorocha14/Trellif
+                                </a>
+                            </small>
+                        </b>
+                        <p>
+                            A college project, simplifying activity and
+                            project management, inspired by Trello. Enabling
+                            collaborative task and project organization, it
+                            facilitates efficient workflows. With Laravel 9,
+                            Vue 3, Scss, MySQL, it supports project
+                            creation, task assignments, and status updates.
+                            Valuable for teams and individuals, it optimizes
+                            daily tasks through organized workflows.
+                        </p>
+                    </article>
+                </li>
+                <li>
+                    <aside>Web Reservation Application</aside>
+                    <article>
+                        <b class="project-title">
+                            <span> Cineiff </span>
+                            <small>
+                                <a href="https://github.com/thiagorocha14/cineiff" target="_blank">
+                                    github.com/thiagorocha14/cineiff
+                                </a>
+                            </small>
+                        </b>
+                        <p>
+                            Is a college project, a web application to
+                            manage one of the college's spaces, the
+                            <i>Cineteatro</i>. It allows users to solicit
+                            reservations for the space, and the admin can
+                            approve or deny the request. Also, it has a
+                            dashboard to show the next events, and the admin
+                            can manage the events, add new movies, create
+                            users and see reports. The system was developed
+                            separately, the backend with Laravel 10 and
+                            MySQL, and the frontend with Angular 16. Both
+                            applications are connected through RESTful
+                            services and deployed in a Docker container.
+                        </p>
+                    </article>
+                </li>
+                <li>
+                    <aside>DBA</aside>
+                    <article>
+                        <b class="project-title">
+                            <span> Database Migration </span>
+                        </b>
+                        <p>
+                            At the start of my role, I focused on migrating
+                            customers to our system using Delphi. My main
+                            task was writing SQL Statements to transfer data
+                            across databases like MySQL, Postgres, SQL
+                            Server, Firebird, etc.
+                        </p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <!-- EDUCATION -->
+        <section>
+            <h3 class="section-title">Education</h3>
+            <ul>
+                <li>
+                    <aside>2020 - 2024</aside>
+                    <article>
+                        <b class="project-title">
+                            <span>
+                                Information Systems (Bachelor's Degree)
+                            </span>
+                            <small>
+                                <a href="https://portal1.iff.edu.br/" target="_blank">IFF (Instituto Federal
+                                    Fluminense)</a>
+                            </small>
+                        </b>
+                        <p>
+                            Graduated in Information Systems at IFF, where I
+                            learned software development and architecture,
+                            databases managment, the basics of artificial
+                            intelligence and machine learning, business
+                            management, parallel programming, and more.
+                        </p>
+                    </article>
+                </li>
+                <li>
+                    <aside>2021</aside>
+                    <article>
+                        <b class="project-title">
+                            <span> PHP Course </span>
+                        </b>
+                        <p>
+                            I took a PHP course to learn more about the
+                            language, how to use it in web development and
+                            how to language works.
+                        </p>
+                    </article>
+                </li>
+                <li>
+                    <aside>2021</aside>
+                    <article>
+                        <b class="project-title">
+                            <span> Laravel Course </span>
+                        </b>
+                        <p>
+                            I took a Laravel course to learn all about the
+                            framework and how to use composer, artisan, and
+                            other.
+                        </p>
+                    </article>
+                </li>
+                <li>
+                    <aside>2017 - 2019</aside>
+                    <article>
+                        <b class="project-title">
+                            <span> High School + Computer Technician </span>
+                            <small>
+                                <a href="https://portal1.iff.edu.br/" target="_blank">IFF (Instituto Federal
+                                    Fluminense)</a>
+                            </small>
+                        </b>
+                        <p>
+                            High School was combined with a computer
+                            technician course, where I learned the basics of
+                            programming, networking, hardware, devops and
+                            OS.
+                        </p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <!-- EXPERIENCE -->
+        <section>
+            <h3 class="section-title">Experience</h3>
+            <ul>
+                <li>
+                    <aside>2021 - Present</aside>
+                    <article>
+                        <b class="project-title">
+                            <span> Fullstack Web Developer </span>
+                            <small> FDC Sistemas </small>
+                        </b>
+                        <div>
+                            <ul>
+                                <li>
+                                    Developed and Fixed web applications
+                                    using PHP, Vanilla JavaScript, and
+                                    frameworks like jQuery and Bootstrap,
+                                    along with Laravel, Vue.js, Tailwind
+                                    CSS, and Angular 8. Employed Firebird,
+                                    MySQL, and Redis as databases in various
+                                    backend configurations. Integrated
+                                    through RESTful services for seamless
+                                    application functionality.
+                                </li>
+                                <li>
+                                    Developed microservices using Laravel
+                                    API, one to handle payments, and the
+                                    other to generate receipts, using MySQL
+                                    and others libraries, integrating with
+                                    3rd party APIs to generate real
+                                    payments.
+                                </li>
+                                <li>
+                                    Worked with Docker, creating containers
+                                    for each application, and using docker
+                                    compose to run all applications
+                                    together. Also, used Git to version the
+                                    code and deploy it to the server.
+                                </li>
+                                <li>
+                                    Migrated databases from other systems to
+                                    our system, using SQL statements to
+                                    transfer data across databases like
+                                    MySQL, Postgres, SQL Server, Firebird,
+                                    etc.
+                                </li>
+                            </ul>
+                            <ul class="ul-skills">
+                                <li>PHP</li>
+                                <li>JavaScript</li>
+                                <li>SQL</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Docker</li>
+                                <li>Git</li>
+                                <li>Laravel</li>
+                                <li>Angular</li>
+                                <li>Vue</li>
+                                <li>MySQL</li>
+                                <li>Firebird</li>
+                                <li>Linux</li>
+                                <li>Bootstrap</li>
+                                <li>jQuery</li>
+                                <li>Tailwind</li>
+                                <li>Blade</li>
+                                <li>Delphi</li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <aside>2020 - 2021</aside>
+                    <article>
+                        <b class="project-title">
+                            <span> Head of inputs sector </span>
+                            <small> Concrelagos </small>
+                        </b>
+                        <div>
+                            <ul>
+                                <li>
+                                    Implemented strategies, enhancing
+                                    efficiency, cutting material acquisition
+                                    time, and minimizing resource waste,
+                                    demonstrating expertise in logistics
+                                    optimization.
+                                </li>
+                                <li>
+                                    Automated team communication by
+                                    implementing an email system, improving
+                                    efficiency and ensuring timely
+                                    correspondence with stakeholders.
+                                </li>
+                            </ul>
+                            <ul class="ul-skills">
+                                <li>Excel</li>
+                                <li>Communication</li>
+                                <li>Leadership</li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <!-- LANGUAGES -->
+        <section>
+            <h3 class="section-title">Languages</h3>
+            <ul>
+                <li>
+                    <aside>Portuguese</aside>
+                    <article>
+                        <b class="project-title">
+                            <span> Native </span>
+                        </b>
+                    </article>
+                </li>
+                <li>
+                    <aside>English</aside>
+                    <article>
+                        <b class="project-title">
+                            <span> B2 </span>
+                        </b>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
 </html>
