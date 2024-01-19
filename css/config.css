@@ -1,0 +1,23 @@
+main {
+    width: 65dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article h3 {
+    border-top: 1px solid var(--text);
+    padding: 1.5rem;
+}
+
+article h3:last-child {
+    border-bottom: 1px solid var(--text);
+}

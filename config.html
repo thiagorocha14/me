@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Thiago Rocha</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/assets/favicon/favicon-32x32.png"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/prism.css" />
+        <link rel="stylesheet" href="css/config.css" />
+    </head>
+    <body>
+        <label class="switch no-print">
+            <input
+                class="switch_input"
+                id="switch_input"
+                type="checkbox"
+                role="switch"
+            />
+            <svg
+                class="switch_icon switch_icon--light"
+                viewBox="0 0 12 12"
+                width="12px"
+                height="12px"
+                aria-hidden="true"
+            >
+                <g
+                    fill="#000"
+                    stroke="#000"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                >
+                    <circle cx="6" cy="6" r="2" />
+                    <g stroke-dasharray="1.5 1.5">
+                        <polyline
+                            points="6 10,6 11.5"
+                            transform="rotate(0,6,6)"
+                        />
+                        <polyline
+                            points="6 10,6 11.5"
+                            transform="rotate(45,6,6)"
+                        />
+                        <polyline
+                            points="6 10,6 11.5"
+                            transform="rotate(90,6,6)"
+                        />
+                        <polyline
+                            points="6 10,6 11.5"
+                            transform="rotate(135,6,6)"
+                        />
+                        <polyline
+                            points="6 10,6 11.5"
+                            transform="rotate(180,6,6)"
+                        />
+                        <polyline
+                            points="6 10,6 11.5"
+                            transform="rotate(225,6,6)"
+                        />
+                        <polyline
+                            points="6 10,6 11.5"
+                            transform="rotate(270,6,6)"
+                        />
+                        <polyline
+                            points="6 10,6 11.5"
+                            transform="rotate(315,6,6)"
+                        />
+                    </g>
+                </g>
+            </svg>
+            <svg
+                class="switch_icon switch_icon--dark"
+                viewBox="0 0 12 12"
+                width="12px"
+                height="12px"
+                aria-hidden="true"
+            >
+                <g
+                    fill="#fff"
+                    stroke="#fff"
+                    stroke-width="1"
+                    stroke-linejoin="round"
+                    transform="rotate(-45,6,6)"
+                >
+                    <path
+                        d="m9,10c-2.209,0-4-1.791-4-4s1.791-4,4-4c.304,0,.598.041.883.105-.995-.992-2.367-1.605-3.883-1.605C2.962.5.5,2.962.5,6s2.462,5.5,5.5,5.5c1.516,0,2.888-.613,3.883-1.605-.285.064-.578.105-.883.105Z"
+                    />
+                </g>
+            </svg>
+            <span class="switch_sr">Dark Mode</span>
+        </label>
+        <div class="lang-menu no-print">
+            <div class="selected-lang en">
+                <a href="#">English</a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#" class="pt-br" id="pt-br">Portuguese</a>
+                </li>
+                <li>
+                    <a href="#" class="en" id="en">English</a>
+                </li>
+            </ul>
+        </div>
+        <main id="english">
+            <header>
+                <a href="index.html">
+                    <svg
+                        width="12px"
+                        height="12px"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M4.205 8.72805L12.205 3.72805C13.2041 3.10363 14.5 3.82189 14.5 5.00004V15C14.5 16.1782 13.2041 16.8965 12.205 16.272L4.205 11.272C3.265 10.6845 3.265 9.31555 4.205 8.72805Z"
+                            fill="#000000"
+                        />
+                    </svg>
+                    Back
+                </a>
+                <h1>Configurations</h1>
+            </header>
+            <section>
+                <i>My config files.</i>
+            </section>
+            <article>
+                <div>
+                    <h3>.gitconfig</h3>
+                    <pre class="d-none">
+                        <code class="language-editorconfig line-numbers remove-trailing">
+                            [user]
+                                email = thiagormnb@gmail.com
+                                name = ThiagoRocha14
+                            [alias]
+                                s = status
+                                c = checkout
+                                b = branch
+                                d = diff
+                                l = log
+                                cm = commit -m
+                                plom = pull origin master
+                                plos = pull origin sprint
+                                psom = push origin master
+                                psos = push origin sprint
+                        </code>
+                    </pre>
+                </div>
+                <div>
+                    <h3>.editorconfig</h3>
+                    <pre class="d-none">
+                        <code class="language-editorconfig line-numbers remove-trailing">
+                            root = true
+
+                            [*]
+                                charset = utf-8
+                                indent_style = space
+                                indent_size = 4
+                                insert_final_newline = true
+                                trim_trailing_whitespace = true
+                                end_of_line = lf
+
+                            [*.ts]
+                                quote_type = single
+
+                            [*.md]
+                                max_line_length = off
+                                trim_trailing_whitespace = false
+
+                            [*.{yml,yaml}]
+                                indent_size = 2
+
+                            [docker-compose.yml]
+                                indent_size = 4
+                        </code>
+                    </pre>
+                </div>
+                <div>
+                    <h3>settings.json</h3>
+                    <pre class="d-none">
+                        <code class="language-json line-numbers remove-trailing">
+                            {
+                                "workbench.colorTheme": "poimandres",
+                                "workbench.iconTheme": "city-lights-icons-vsc",
+
+                                "workbench.statusBar.visible": true,
+                                "workbench.tree.indent": 20,
+                                "workbench.tree.renderIndentGuides": "always",
+                                "workbench.sideBar.location": "right",
+                                "workbench.colorCustomizations": {
+                                    "tree.indentGuidesStroke": "#cecece"
+                                },
+
+                                "workbench.editor.highlightModifiedTabs": true,
+                                "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+                                "explorer.confirmDragAndDrop": false,
+
+                                "editor.minimap.enabled": false,
+                                "editor.fontFamily": "Fira Code",
+                                "editor.fontSize": 13,
+                                "editor.lineHeight": 20,
+                                "editor.letterSpacing": 0.5,
+                                "editor.fontWeight": "300",
+                                "editor.tabCompletion": "on",
+                                "editor.tabSize": 4,
+
+                                "editor.formatOnSave": true,
+                                "editor.codeActionsOnSave": {
+                                    "source.fixAll.eslint": "explicit"
+                                },
+
+                                "files.trimTrailingWhitespace": true,
+
+                                "typescript.updateImportsOnFileMove.enabled": "always",
+                                "javascript.updateImportsOnFileMove.enabled": "always",
+
+                                "php.validate.executablePath": "C:/xampp/php/php.exe",
+                                "eslint.validate": ["javascript", "typescript"],
+
+                                "[php]": {
+                                    "editor.defaultFormatter": "DEVSENSE.phptools-vscode",
+                                    "editor.suggest.showReferences": false
+                                },
+                                "[typescript]": {
+                                    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+                                },
+                                "[javascript]": {
+                                    "editor.defaultFormatter": "esbenp.prettier-vscode"
+                                },
+                                "[python]": {
+                                    "editor.formatOnType": true
+                                },
+                                "[html]": {
+                                    "editor.defaultFormatter": "esbenp.prettier-vscode"
+                                }
+
+                            }
+                        </code>
+                    </pre>
+                </div>
+            </article>
+        </main>
+        <main id="portuguese">
+            <header>
+                <a href="index.html">
+                    <svg
+                        width="12px"
+                        height="12px"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M4.205 8.72805L12.205 3.72805C13.2041 3.10363 14.5 3.82189 14.5 5.00004V15C14.5 16.1782 13.2041 16.8965 12.205 16.272L4.205 11.272C3.265 10.6845 3.265 9.31555 4.205 8.72805Z"
+                            fill="#000000"
+                        />
+                    </svg>
+                    Voltar
+                </a>
+                <h1>Configurações</h1>
+            </header>
+            <section>
+                <i>Meus arquivos de configuração.</i>
+            </section>
+            <article></article>
+        </main>
+        <script src="./js/config.js"></script>
+        <script src="./js/prism.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

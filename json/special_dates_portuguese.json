@@ -1,0 +1,32 @@
+{
+    "dates": [
+        {
+            "date": "2001-10-03",
+            "description": "Meu nascimento."
+        },
+        {
+            "date": "2011-06-01",
+            "description": "Laravel 1.0 foi lançado."
+        },
+        {
+            "date": "2012-04-13",
+            "description": "Saí da minha roça para morar no centro da cidade."
+        },
+        {
+            "date": "2017-07-21",
+            "description": "Minha primeira linha de código."
+        },
+        {
+            "date": "2021-09-22",
+            "description": "Eu me tornei profissionalmente um programador fullstack."
+        },
+        {
+            "date": "2022-12-06",
+            "description": "Perdi meu pai."
+        },
+        {
+            "date": "2023-08-03",
+            "description": "Vi a minha esposa pela primeira vez em 3 anos."
+        }
+    ]
+}

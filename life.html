@@ -7,6 +7,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/assets/favicon/favicon-32x32.png"
+        />
+        <link
             href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
             rel="stylesheet"
         />
@@ -15,31 +21,112 @@
     </head>
     <body>
         <label class="switch no-print">
-            <input class="switch__input" type="checkbox" role="switch">
-            <svg class="switch__icon switch__icon--light" viewBox="0 0 12 12" width="12px" height="12px" aria-hidden="true">
-                <g fill="#000" stroke="#000" stroke-width="1" stroke-linecap="round">
+            <input
+                class="switch_input"
+                id="switch_input"
+                type="checkbox"
+                role="switch"
+            />
+            <svg
+                class="switch_icon switch_icon--light"
+                viewBox="0 0 12 12"
+                width="12px"
+                height="12px"
+                aria-hidden="true"
+            >
+                <g
+                    fill="#000"
+                    stroke="#000"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                >
                     <circle cx="6" cy="6" r="2" />
                     <g stroke-dasharray="1.5 1.5">
-                        <polyline points="6 10,6 11.5" transform="rotate(0,6,6)" />
-                        <polyline points="6 10,6 11.5" transform="rotate(45,6,6)" />
-                        <polyline points="6 10,6 11.5" transform="rotate(90,6,6)" />
-                        <polyline points="6 10,6 11.5" transform="rotate(135,6,6)" />
-                        <polyline points="6 10,6 11.5" transform="rotate(180,6,6)" />
-                        <polyline points="6 10,6 11.5" transform="rotate(225,6,6)" />
-                        <polyline points="6 10,6 11.5" transform="rotate(270,6,6)" />
-                        <polyline points="6 10,6 11.5" transform="rotate(315,6,6)" />
+                        <polyline
+                            points="6 10,6 11.5"
+                            transform="rotate(0,6,6)"
+                        />
+                        <polyline
+                            points="6 10,6 11.5"
+                            transform="rotate(45,6,6)"
+                        />
+                        <polyline
+                            points="6 10,6 11.5"
+                            transform="rotate(90,6,6)"
+                        />
+                        <polyline
+                            points="6 10,6 11.5"
+                            transform="rotate(135,6,6)"
+                        />
+                        <polyline
+                            points="6 10,6 11.5"
+                            transform="rotate(180,6,6)"
+                        />
+                        <polyline
+                            points="6 10,6 11.5"
+                            transform="rotate(225,6,6)"
+                        />
+                        <polyline
+                            points="6 10,6 11.5"
+                            transform="rotate(270,6,6)"
+                        />
+                        <polyline
+                            points="6 10,6 11.5"
+                            transform="rotate(315,6,6)"
+                        />
                     </g>
                 </g>
             </svg>
-            <svg class="switch__icon switch__icon--dark" viewBox="0 0 12 12" width="12px" height="12px" aria-hidden="true">
-                <g fill="#fff" stroke="#fff" stroke-width="1" stroke-linejoin="round" transform="rotate(-45,6,6)">
-                    <path d="m9,10c-2.209,0-4-1.791-4-4s1.791-4,4-4c.304,0,.598.041.883.105-.995-.992-2.367-1.605-3.883-1.605C2.962.5.5,2.962.5,6s2.462,5.5,5.5,5.5c1.516,0,2.888-.613,3.883-1.605-.285.064-.578.105-.883.105Z"/>
-                </g>	
+            <svg
+                class="switch_icon switch_icon--dark"
+                viewBox="0 0 12 12"
+                width="12px"
+                height="12px"
+                aria-hidden="true"
+            >
+                <g
+                    fill="#fff"
+                    stroke="#fff"
+                    stroke-width="1"
+                    stroke-linejoin="round"
+                    transform="rotate(-45,6,6)"
+                >
+                    <path
+                        d="m9,10c-2.209,0-4-1.791-4-4s1.791-4,4-4c.304,0,.598.041.883.105-.995-.992-2.367-1.605-3.883-1.605C2.962.5.5,2.962.5,6s2.462,5.5,5.5,5.5c1.516,0,2.888-.613,3.883-1.605-.285.064-.578.105-.883.105Z"
+                    />
+                </g>
             </svg>
-            <span class="switch__sr">Dark Mode</span>
+            <span class="switch_sr">Dark Mode</span>
         </label>
-        <main>
+        <div class="lang-menu no-print">
+            <div class="selected-lang en">
+                <a href="#">English</a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#" class="pt-br" id="pt-br">Portuguese</a>
+                </li>
+                <li>
+                    <a href="#" class="en" id="en">English</a>
+                </li>
+            </ul>
+        </div>
+        <main id="english">
             <header>
+                <a href="index.html">
+                    <svg
+                        width="12px"
+                        height="12px"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M4.205 8.72805L12.205 3.72805C13.2041 3.10363 14.5 3.82189 14.5 5.00004V15C14.5 16.1782 13.2041 16.8965 12.205 16.272L4.205 11.272C3.265 10.6845 3.265 9.31555 4.205 8.72805Z"
+                            fill="#000000"
+                        />
+                    </svg>
+                    Back
+                </a>
                 <h1>Life in Squares</h1>
             </header>
             <section>
@@ -48,16 +135,43 @@
             <article>
                 <header>
                     <small>
-                        <i>
-                            Each square is equal to one week...
-                        </i>
+                        <i> Each square is equal to one week... </i>
                     </small>
                 </header>
-                <div id="cubes">
-
-                </div>
+                <div id="cubes-english" class="cubes-container"></div>
+            </article>
+        </main>
+        <main id="portuguese">
+            <header>
+                <a href="index.html">
+                    <svg
+                        width="12px"
+                        height="12px"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M4.205 8.72805L12.205 3.72805C13.2041 3.10363 14.5 3.82189 14.5 5.00004V15C14.5 16.1782 13.2041 16.8965 12.205 16.272L4.205 11.272C3.265 10.6845 3.265 9.31555 4.205 8.72805Z"
+                            fill="#000000"
+                        />
+                    </svg>
+                    Voltar
+                </a>
+                <h1>Vida em Cubos</h1>
+            </header>
+            <section>
+                <i>Vida uma vida com a qual irá se lembrar.</i>
+            </section>
+            <article>
+                <header>
+                    <small>
+                        <i> Cada quadrado é igual a uma semana... </i>
+                    </small>
+                </header>
+                <div id="cubes-portuguese" class="cubes-container"></div>
             </article>
         </main>
         <script src="./js/life.js"></script>
+        <script src="./js/main.js"></script>
     </body>
 </html>
