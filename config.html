@@ -133,31 +133,67 @@
             <section>
                 <i>My config files.</i>
             </section>
-            <article>
-                <div>
-                    <h3>.gitconfig</h3>
-                    <pre class="d-none">
+        </main>
+        <main id="portuguese">
+            <header>
+                <a href="index.html">
+                    <svg
+                        width="12px"
+                        height="12px"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M4.205 8.72805L12.205 3.72805C13.2041 3.10363 14.5 3.82189 14.5 5.00004V15C14.5 16.1782 13.2041 16.8965 12.205 16.272L4.205 11.272C3.265 10.6845 3.265 9.31555 4.205 8.72805Z"
+                            fill="#000000"
+                        />
+                    </svg>
+                    Voltar
+                </a>
+                <h1>Configurações</h1>
+            </header>
+            <section>
+                <i>Meus arquivos de configuração.</i>
+            </section>
+        </main>
+        <main>
+            <article class="configs">
+                <div class="config">
+                    <h3 class="name-config">.gitconfig - Git</h3>
+                    <pre id=".gitconfig">
                         <code class="language-editorconfig line-numbers remove-trailing">
                             [user]
                                 email = thiagormnb@gmail.com
                                 name = ThiagoRocha14
+                            [color]
+                                status = auto
+                                branch = auto
+                                interactive = auto
+                                diff = auto
+                            [core]
+                                ignorecase = false
+                                autocrlf = false
+                                editor = notepad
                             [alias]
                                 s = status
                                 c = checkout
                                 b = branch
                                 d = diff
                                 l = log
+                                uncommit = reset --soft HEAD~1
                                 cm = commit -m
                                 plom = pull origin master
                                 plos = pull origin sprint
                                 psom = push origin master
                                 psos = push origin sprint
+                                hs = log --pretty='%C(yellow)%h %C(cyan)%ad %Cblue%aN%C(auto)%d %Creset%s' --date=relative --date-order --graph
+                                o = log --pretty='%C(yellow)%h %C(cyan)%ad %Cblue%aN%C(auto)%d %Creset%s' --date=relative --date-order --graph
                         </code>
                     </pre>
                 </div>
-                <div>
-                    <h3>.editorconfig</h3>
-                    <pre class="d-none">
+                <div class="config">
+                    <h3 class="name-config">.editorconfig - EditorConfig</h3>
+                    <pre>
                         <code class="language-editorconfig line-numbers remove-trailing">
                             root = true
 
@@ -184,9 +220,9 @@
                         </code>
                     </pre>
                 </div>
-                <div>
-                    <h3>settings.json</h3>
-                    <pre class="d-none">
+                <div class="config">
+                    <h3 class="name-config">settings.json - VSCode</h3>
+                    <pre>
                         <code class="language-json line-numbers remove-trailing">
                             {
                                 "workbench.colorTheme": "poimandres",
@@ -196,6 +232,7 @@
                                 "workbench.tree.indent": 20,
                                 "workbench.tree.renderIndentGuides": "always",
                                 "workbench.sideBar.location": "right",
+                                "workbench.activityBar.location": "top",
                                 "workbench.colorCustomizations": {
                                     "tree.indentGuidesStroke": "#cecece"
                                 },
@@ -206,6 +243,7 @@
 
                                 "editor.minimap.enabled": false,
                                 "editor.fontFamily": "Fira Code",
+                                "editor.fontLigatures": true,
                                 "editor.fontSize": 13,
                                 "editor.lineHeight": 20,
                                 "editor.letterSpacing": 0.5,
@@ -219,7 +257,7 @@
                                 },
 
                                 "files.trimTrailingWhitespace": true,
-
+                                "prettier.tabWidth": 4,
                                 "typescript.updateImportsOnFileMove.enabled": "always",
                                 "javascript.updateImportsOnFileMove.enabled": "always",
 
@@ -244,33 +282,102 @@
                                 }
 
                             }
+
+                        </code>
+                    </pre>
+                </div>
+                <div class="config">
+                    <h3 class="name-config">extensions - VSCode</h3>
+                    <pre>
+                        <code class="language-bash line-numbers remove-trailing">
+                            code --install-extension DaGhostman.vs-treeview
+                            code --install-extension DEVSENSE.composer-php-vscode
+                            code --install-extension DEVSENSE.phptools-vscode
+                            code --install-extension DEVSENSE.profiler-php-vscode
+                            code --install-extension DotJoshJohnson.xml
+                            code --install-extension eamodio.gitlens
+                            code --install-extension EditorConfig.EditorConfig
+                            code --install-extension esbenp.prettier-vscode
+                            code --install-extension GitHub.copilot
+                            code --install-extension GitHub.copilot-chat
+                            code --install-extension maptz.camelcasenavigation
+                            code --install-extension mikestead.dotenv
+                            code --install-extension ms-vscode.vscode-typescript-tslint-plugin
+                            code --install-extension mtxr.sqltools
+                            code --install-extension pgl.laravel-jump-controller
+                            code --install-extension pomber.git-file-history
+                            code --install-extension Vue.volar
+                            code --install-extension yzhang.markdown-all-in-one
+                        </code>
+                    </pre>
+                </div>
+                <div class="config">
+                    <h3 class="name-config">keybindings.json - VSCode</h3>
+                    <pre>
+                        <code class="language-json line-numbers remove-trailing">
+                            [
+                                {
+                                    "key": "ctrl+shift+u",
+                                    "command": "editor.action.transformToUppercase",
+                                    "when": "editorTextFocus"
+                                },
+                                {
+                                    "key": "ctrl+shift+l",
+                                    "command": "editor.action.transformToLowercase",
+                                    "when": "editorTextFocus"
+                                },
+                                {
+                                    "key": "ctrl+shift+oem_6",
+                                    "command": "editor.emmet.action.matchTag"
+                                },
+                                {
+                                    "key": "ctrl+alt+s",
+                                    "command": "workbench.action.files.saveFiles"
+                                },
+                                {
+                                    "key": "ctrl+alt+numpad1",
+                                    "command": "editor.action.formatDocument",
+                                    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+                                },
+                                {
+                                    "key": "shift+alt+f",
+                                    "command": "-editor.action.formatDocument",
+                                    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+                                },
+                                {
+                                    "key": "ctrl+alt+numpad2",
+                                    "command": "sqltools.formatSql",
+                                    "when": "editorHasSelection && editorTextFocus && !config.sqltools.disableChordKeybindings && !editorReadonly"
+                                },
+                                {
+                                    "key": "ctrl+e ctrl+b",
+                                    "command": "-sqltools.formatSql",
+                                    "when": "editorHasSelection && editorTextFocus && !config.sqltools.disableChordKeybindings && !editorReadonly"
+                                },
+                                {
+                                    "key": "ctrl+alt+numpad0",
+                                    "command": "workbench.action.duplicateWorkspaceInNewWindow"
+                                },
+                            ]
+                        </code>
+                    </pre>
+                </div>
+                <div class="config">
+                    <h3 class="name-config">$Profile - PowerShell</h3>
+                    <pre>
+                        <code class="language-bash line-numbers remove-trailing">
+                            clear
+                            # oh-my-posh activation
+                            Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ohmyposh.dev/install.ps1'))
+
+                            oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/velvet.omp.json" | Invoke-Expression
+
+                            Set-PSReadLineOption -PredictionSource History
+                            Set-PSReadLineOption -PredictionViewStyle ListView
                         </code>
                     </pre>
                 </div>
             </article>
-        </main>
-        <main id="portuguese">
-            <header>
-                <a href="index.html">
-                    <svg
-                        width="12px"
-                        height="12px"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M4.205 8.72805L12.205 3.72805C13.2041 3.10363 14.5 3.82189 14.5 5.00004V15C14.5 16.1782 13.2041 16.8965 12.205 16.272L4.205 11.272C3.265 10.6845 3.265 9.31555 4.205 8.72805Z"
-                            fill="#000000"
-                        />
-                    </svg>
-                    Voltar
-                </a>
-                <h1>Configurações</h1>
-            </header>
-            <section>
-                <i>Meus arquivos de configuração.</i>
-            </section>
-            <article></article>
         </main>
         <script src="./js/config.js"></script>
         <script src="./js/prism.js"></script>

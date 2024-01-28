@@ -71,7 +71,8 @@ function fillCubes(dates, lang) {
     let eventCount = 0;
 
     for (let i = getNumberWeekStart(); i < weeksLived; i++) {
-        cubes[i].className = "cube";
+        const cube = cubes[i];
+        cube.className = "cube";
 
         dates.forEach((json) => {
             let dateArray = json.date.split("-");
@@ -82,43 +83,62 @@ function fillCubes(dates, lang) {
             );
             if (i == diffWeeksBetweenDates(date, begin)) {
                 eventCount++;
-                const date_string =
-                    lang === "portuguese"
-                        ? date.toLocaleDateString("pt-br")
-                        : date.toDateString();
 
-                let div = document.createElement("div");
-                div.className = "triangle";
-                cubes[i].appendChild(div);
+                renderSpecialCube(cube, lang, date, json);
 
-                let child = document.createElement("div");
-                child.className = "special";
+                dates.splice(dates.indexOf(json), 1);
 
-                let img = document.createElement("img");
-                img.className = "special-img";
-                img.src = "../assets/imgs/" + json.date + ".jpg";
-                child.appendChild(img);
-
-                let span = document.createElement("span");
-                span.className = "special-description";
-                span.innerHTML = `${json.description}<br>${date_string}`;
-                child.appendChild(span);
-
-                cubes[i].appendChild(child);
                 return;
             }
         });
 
-        if (eventCount > 0) {
-            cubes[i].classList.add("lived");
-        }
+        checkEventCountAndChangeColor(eventCount, cubes[i]);
+    }
+}
 
-        if (eventCount > 2) {
-            cubes[i].classList.add("lived-2");
-        }
+function renderSpecialCube(cube, lang, date, json) {
+    const date_string =
+        lang === "portuguese"
+            ? date.toLocaleDateString("pt-br")
+            : date.toDateString();
 
-        if (eventCount > 4) {
-            cubes[i].classList.add("lived-3");
-        }
+    createTriangle(cube);
+    createSpecialBox(cube, date_string, json);
+}
+
+function createTriangle(cube) {
+    let div = document.createElement("div");
+    div.className = "triangle";
+    cube.appendChild(div);
+}
+
+function createSpecialBox(cube, date_string, json) {
+    let div = document.createElement("div");
+    div.className = "special";
+
+    let img = document.createElement("img");
+    img.className = "special-img";
+    img.src = "../assets/imgs/" + json.date + ".jpg";
+    div.appendChild(img);
+
+    let span = document.createElement("span");
+    span.className = "special-description";
+    span.innerHTML = `${json.description}<br>${date_string}`;
+    div.appendChild(span);
+
+    cube.appendChild(div);
+}
+
+function checkEventCountAndChangeColor(eventCount, cube) {
+    if (eventCount > 0) {
+        cube.classList.add("lived");
+    }
+
+    if (eventCount > 2) {
+        cube.classList.add("lived-2");
+    }
+
+    if (eventCount > 4) {
+        cube.classList.add("lived-3");
     }
 }

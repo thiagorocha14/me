@@ -13,11 +13,24 @@ body {
     align-items: center;
 }
 
-article h3 {
-    border-top: 1px solid var(--text);
+.name-config {
     padding: 1.5rem;
 }
 
-article h3:last-child {
+.configs {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.config {
+    border-top: 1px solid var(--text);
+    cursor: pointer;
+}
+
+.config:last-of-type {
     border-bottom: 1px solid var(--text);
+}
+
+.config > div {
+    display: none;
 }
