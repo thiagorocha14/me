@@ -43,6 +43,18 @@ body {
     place-items: center;
     grid-row-gap: 1px;
     width: 40dvw;
+    overflow: auto;
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 90dvw;
+        margin-left: 1.5em;
+    }
+
+    .cubes-container {
+        width: 85vw;
+    }
 }
 
 .year {

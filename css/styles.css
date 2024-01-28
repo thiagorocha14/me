@@ -74,6 +74,13 @@ a:hover {
     left: 4em;
 }
 
+@media (max-width: 768px) {
+    .switch {
+        top: 2em;
+        left: 2em;
+    }
+}
+
 .switch_icon,
 .switch_input {
     display: block;

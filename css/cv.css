@@ -4,6 +4,12 @@ body {
     gap: 1rem;
 }
 
+@media (max-width: 768px) {
+    body {
+        margin: 4em 2em;
+    }
+}
+
 header {
     display: flex;
     flex-direction: row;
