@@ -10,7 +10,7 @@
 })();
 
 async function loadJson(lang) {
-    const json_file = "/json/special_dates_" + lang + ".json";
+    const json_file = "./json/special_dates_" + lang + ".json";
 
     const json = await fetch(json_file).then((response) => response.json());
     const dates = json.dates;
