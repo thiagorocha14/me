@@ -118,7 +118,7 @@ function createSpecialBox(cube, date_string, json) {
 
     let img = document.createElement("img");
     img.className = "special-img";
-    img.src = "../assets/imgs/" + json.date + ".jpg";
+    img.src = "./assets/imgs/" + json.date + ".jpg";
     div.appendChild(img);
 
     let span = document.createElement("span");
