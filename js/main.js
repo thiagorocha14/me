@@ -17,7 +17,7 @@
         document.getElementById("pt-br").addEventListener("click", function () {
             translateToPtBr();
             if (typeof loadJson() === "function") {
-                loadJson().then((dates) => {
+                loadJson("portuguese").then((dates) => {
                     createCubes();
                     fillCubes(dates);
                 });
@@ -27,7 +27,7 @@
         document.getElementById("en").addEventListener("click", function () {
             translateToEn();
             if (typeof loadJson() === "function") {
-                loadJson().then((dates) => {
+                loadJson("english").then((dates) => {
                     createCubes();
                     fillCubes(dates);
                 });
